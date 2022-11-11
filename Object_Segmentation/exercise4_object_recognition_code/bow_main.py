@@ -84,8 +84,8 @@ def descriptors_hog(img, vPoints, cellWidth, cellHeight):
                 angles = np.arctan2(cell_grad_y, cell_grad_x)
 
                 # compute the histogram
-                hist, _ = np.histogram(angles.flatten(), nBins, (-np.pi, np.pi))
-                desc.extend(hist.tolist())
+                histogram= np.histogram(angles.flatten(), nBins, (-np.pi, np.pi))[0]
+                desc.extend(histogram.tolist())
 
         descriptors.append(desc)
 
