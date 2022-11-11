@@ -1,0 +1,157 @@
+2022-11-11 02:00:22,669 INFO Let the games begin
+2022-11-11 02:01:04,228 INFO [Step 99/ Epoch 0]  Loss: 2.2881  
+2022-11-11 02:01:20,241 INFO val acc:17.08
+2022-11-11 02:01:20,325 INFO [*] best model saved
+
+2022-11-11 02:01:58,497 INFO [Step 199/ Epoch 0]  Loss: 2.1949  
+2022-11-11 02:02:14,399 INFO val acc:22.52
+2022-11-11 02:02:14,529 INFO [*] best model saved
+
+2022-11-11 02:02:52,528 INFO [Step 299/ Epoch 0]  Loss: 2.0973  
+2022-11-11 02:03:08,412 INFO val acc:24.98
+2022-11-11 02:03:08,531 INFO [*] best model saved
+
+2022-11-11 02:04:01,345 INFO [Step 47/ Epoch 1]  Loss: 1.9909  
+2022-11-11 02:04:17,448 INFO val acc:26.92
+2022-11-11 02:04:17,568 INFO [*] best model saved
+
+2022-11-11 02:04:57,494 INFO [Step 147/ Epoch 1]  Loss: 1.9673  
+2022-11-11 02:05:13,419 INFO val acc:28.0
+2022-11-11 02:05:13,558 INFO [*] best model saved
+
+2022-11-11 02:05:50,642 INFO [Step 247/ Epoch 1]  Loss: 1.8292  
+2022-11-11 02:06:06,600 INFO val acc:30.08
+2022-11-11 02:06:06,742 INFO [*] best model saved
+
+2022-11-11 02:06:44,602 INFO [Step 347/ Epoch 1]  Loss: 1.9494  
+2022-11-11 02:07:00,563 INFO val acc:31.34
+2022-11-11 02:07:00,685 INFO [*] best model saved
+
+2022-11-11 02:07:52,101 INFO [Step 95/ Epoch 2]  Loss: 1.9202  
+2022-11-11 02:08:07,987 INFO val acc:32.24
+2022-11-11 02:08:08,103 INFO [*] best model saved
+
+2022-11-11 02:08:45,653 INFO [Step 195/ Epoch 2]  Loss: 1.8465  
+2022-11-11 02:09:01,578 INFO val acc:32.56
+2022-11-11 02:09:01,687 INFO [*] best model saved
+
+2022-11-11 02:09:39,141 INFO [Step 295/ Epoch 2]  Loss: 1.8597  
+2022-11-11 02:09:55,175 INFO val acc:33.76
+2022-11-11 02:09:55,280 INFO [*] best model saved
+
+2022-11-11 02:10:45,512 INFO [Step 43/ Epoch 3]  Loss: 1.7985  
+2022-11-11 02:11:01,384 INFO val acc:33.9
+2022-11-11 02:11:01,501 INFO [*] best model saved
+
+2022-11-11 02:11:41,048 INFO [Step 143/ Epoch 3]  Loss: 1.8359  
+2022-11-11 02:11:56,946 INFO val acc:34.38
+2022-11-11 02:11:57,062 INFO [*] best model saved
+
+2022-11-11 02:12:34,936 INFO [Step 243/ Epoch 3]  Loss: 1.7372  
+2022-11-11 02:12:50,832 INFO val acc:35.92
+2022-11-11 02:12:50,950 INFO [*] best model saved
+
+2022-11-11 02:13:30,810 INFO [Step 343/ Epoch 3]  Loss: 1.7839  
+2022-11-11 02:13:46,724 INFO val acc:35.16
+2022-11-11 02:14:38,419 INFO [Step 91/ Epoch 4]  Loss: 1.7000  
+2022-11-11 02:14:54,791 INFO val acc:35.94
+2022-11-11 02:14:54,908 INFO [*] best model saved
+
+2022-11-11 02:15:33,256 INFO [Step 191/ Epoch 4]  Loss: 1.7175  
+2022-11-11 02:15:49,452 INFO val acc:37.22
+2022-11-11 02:15:49,579 INFO [*] best model saved
+
+2022-11-11 02:16:31,056 INFO [Step 291/ Epoch 4]  Loss: 1.7857  
+2022-11-11 02:16:47,059 INFO val acc:36.92
+2022-11-11 02:17:42,815 INFO [Step 39/ Epoch 5]  Loss: 1.8306  
+2022-11-11 02:17:58,934 INFO val acc:37.84
+2022-11-11 02:17:59,047 INFO [*] best model saved
+
+2022-11-11 02:18:41,013 INFO [Step 139/ Epoch 5]  Loss: 1.6162  
+2022-11-11 02:18:57,043 INFO val acc:37.28
+2022-11-11 02:19:39,632 INFO [Step 239/ Epoch 5]  Loss: 1.7603  
+2022-11-11 02:19:55,507 INFO val acc:37.46
+2022-11-11 02:20:35,296 INFO [Step 339/ Epoch 5]  Loss: 1.6790  
+2022-11-11 02:20:51,589 INFO val acc:38.62
+2022-11-11 02:20:51,714 INFO [*] best model saved
+
+2022-11-11 02:21:43,637 INFO [Step 87/ Epoch 6]  Loss: 1.6937  
+2022-11-11 02:21:59,724 INFO val acc:38.86
+2022-11-11 02:21:59,810 INFO [*] best model saved
+
+2022-11-11 02:22:38,128 INFO [Step 187/ Epoch 6]  Loss: 1.7399  
+2022-11-11 02:22:56,045 INFO val acc:38.94
+2022-11-11 02:22:56,157 INFO [*] best model saved
+
+2022-11-11 02:23:35,989 INFO [Step 287/ Epoch 6]  Loss: 1.6678  
+2022-11-11 02:23:52,217 INFO val acc:39.24
+2022-11-11 02:23:52,342 INFO [*] best model saved
+
+2022-11-11 02:24:43,954 INFO [Step 35/ Epoch 7]  Loss: 1.6104  
+2022-11-11 02:25:00,003 INFO val acc:41.04
+2022-11-11 02:25:00,137 INFO [*] best model saved
+
+2022-11-11 02:25:39,797 INFO [Step 135/ Epoch 7]  Loss: 1.6321  
+2022-11-11 02:25:55,995 INFO val acc:40.68
+2022-11-11 02:26:34,563 INFO [Step 235/ Epoch 7]  Loss: 1.6792  
+2022-11-11 02:26:50,408 INFO val acc:40.56
+2022-11-11 02:27:29,291 INFO [Step 335/ Epoch 7]  Loss: 1.7064  
+2022-11-11 02:27:45,443 INFO val acc:41.06
+2022-11-11 02:27:45,561 INFO [*] best model saved
+
+2022-11-11 02:28:42,723 INFO [Step 83/ Epoch 8]  Loss: 1.7472  
+2022-11-11 02:28:58,984 INFO val acc:41.42
+2022-11-11 02:28:59,110 INFO [*] best model saved
+
+2022-11-11 02:29:37,121 INFO [Step 183/ Epoch 8]  Loss: 1.6080  
+2022-11-11 02:29:53,088 INFO val acc:41.64
+2022-11-11 02:29:53,206 INFO [*] best model saved
+
+2022-11-11 02:30:33,146 INFO [Step 283/ Epoch 8]  Loss: 1.5351  
+2022-11-11 02:30:49,229 INFO val acc:41.94
+2022-11-11 02:30:49,350 INFO [*] best model saved
+
+2022-11-11 02:31:42,567 INFO [Step 31/ Epoch 9]  Loss: 1.6575  
+2022-11-11 02:31:58,777 INFO val acc:42.02
+2022-11-11 02:31:58,905 INFO [*] best model saved
+
+2022-11-11 02:32:38,294 INFO [Step 131/ Epoch 9]  Loss: 1.6532  
+2022-11-11 02:32:54,303 INFO val acc:42.04
+2022-11-11 02:32:54,421 INFO [*] best model saved
+
+2022-11-11 02:33:34,887 INFO [Step 231/ Epoch 9]  Loss: 1.5769  
+2022-11-11 02:33:50,799 INFO val acc:43.16
+2022-11-11 02:33:50,918 INFO [*] best model saved
+
+2022-11-11 02:34:29,869 INFO [Step 331/ Epoch 9]  Loss: 1.5347  
+2022-11-11 02:34:46,057 INFO val acc:42.78
+2022-11-11 02:35:43,166 INFO [Step 79/ Epoch 10]  Loss: 1.3762  
+2022-11-11 02:35:59,389 INFO val acc:43.76
+2022-11-11 02:35:59,511 INFO [*] best model saved
+
+2022-11-11 02:36:38,419 INFO [Step 179/ Epoch 10]  Loss: 1.5517  
+2022-11-11 02:36:56,183 INFO val acc:43.16
+2022-11-11 02:37:40,885 INFO [Step 279/ Epoch 10]  Loss: 1.5336  
+2022-11-11 02:37:59,177 INFO val acc:43.64
+2022-11-11 02:38:52,784 INFO [Step 27/ Epoch 11]  Loss: 1.4743  
+2022-11-11 02:39:09,021 INFO val acc:43.32
+2022-11-11 02:39:50,674 INFO [Step 127/ Epoch 11]  Loss: 1.4573  
+2022-11-11 02:40:07,034 INFO val acc:44.6
+2022-11-11 02:40:07,157 INFO [*] best model saved
+
+2022-11-11 02:40:48,215 INFO [Step 227/ Epoch 11]  Loss: 1.5739  
+2022-11-11 02:41:04,210 INFO val acc:44.32
+2022-11-11 02:41:43,816 INFO [Step 327/ Epoch 11]  Loss: 1.5379  
+2022-11-11 02:42:00,181 INFO val acc:45.04
+2022-11-11 02:42:00,314 INFO [*] best model saved
+
+2022-11-11 02:42:57,029 INFO [Step 75/ Epoch 12]  Loss: 1.6973  
+2022-11-11 02:43:13,584 INFO val acc:44.72
+2022-11-11 02:43:52,901 INFO [Step 175/ Epoch 12]  Loss: 1.4914  
+2022-11-11 02:44:09,048 INFO val acc:44.14
+2022-11-11 02:44:49,576 INFO [Step 275/ Epoch 12]  Loss: 1.6022  
+2022-11-11 02:45:05,879 INFO val acc:45.92
+2022-11-11 02:45:05,999 INFO [*] best model saved
+
+2022-11-11 02:45:57,656 INFO [Step 23/ Epoch 13]  Loss: 1.5242  
+2022-11-11 02:46:13,449 INFO val acc:45.82

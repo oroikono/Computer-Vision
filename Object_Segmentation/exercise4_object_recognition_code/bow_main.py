@@ -41,11 +41,14 @@ def grid_points(img, nPointsX, nPointsY, border):
     :param border: leave border pixels in each image dimension
     :return: vPoints: 2D grid point coordinates, numpy array, [nPointsX*nPointsY, 2]
     """
-    vPoints = None  # numpy array, [nPointsX*nPointsY, 2]
+    vPoints = []  # numpy array, [nPointsX*nPointsY, 2]
 
     # todo
-    ...
-
+    height, width = img.shape
+    xCrd = np.linspace(border, width - border, nPointsX, endpoint=False)
+    yCrd = np.linspace(border, height - border, nPointsY, endpoint=False)
+    vPoints = [[x, y] for x in xCrd for y in yCrd]
+    vPoints = np.asarray(vPoints)
 
     return vPoints
 
@@ -75,8 +78,14 @@ def descriptors_hog(img, vPoints, cellWidth, cellHeight):
 
                 # todo
                 # compute the angles
+                
+                cell_grad_x = grad_x[start_y:end_y, start_x:end_x]
+                cell_grad_y = grad_y[start_y:end_y, start_x:end_x]
+                angles = np.arctan2(cell_grad_y, cell_grad_x)
+
                 # compute the histogram
-                ...
+                hist, _ = np.histogram(angles.flatten(), nBins, (-np.pi, np.pi))
+                desc.extend(hist.tolist())
 
         descriptors.append(desc)
 
@@ -114,7 +123,9 @@ def create_codebook(nameDirPos, nameDirNeg, k, numiter):
 
         # Collect local feature points for each image, and compute a descriptor for each local feature point
         # todo
-        ...
+        vPoints = grid_points(img, nPointsX, nPointsY, border)
+        descriptors = descriptors_hog(img, vPoints, cellWidth, cellHeight)
+        vFeatures.append(descriptors)
 
 
     vFeatures = np.asarray(vFeatures)  # [n_imgs, n_vPoints, 128]
@@ -138,9 +149,12 @@ def bow_histogram(vFeatures, vCenters):
     histo = None
 
     # todo
-    ...
+    N = vCenters.shape[0]
+    Idx = findnn(vFeatures, vCenters)[0]
+    histo = np.histogram(Idx,bins=N)[0]
 
     return histo
+
 
 
 
@@ -169,7 +183,10 @@ def create_bow_histograms(nameDir, vCenters):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # [h, w]
 
         # todo
-        ...
+        vPoints = grid_points(img, nPointsX, nPointsY, border)
+        vFeatures = descriptors_hog(img, vPoints, cellWidth, cellHeight)
+        histo = bow_histogram(vFeatures, vCenters)
+        vBoW.append(histo)
 
 
     vBoW = np.asarray(vBoW)  # [n_imgs, k]
@@ -189,7 +206,8 @@ def bow_recognition_nearest(histogram,vBoWPos,vBoWNeg):
 
     # Find the nearest neighbor in the positive and negative sets and decide based on this neighbor
     # todo
-    ...
+    DistPos = findnn(histogram, vBoWPos)[1]
+    DistNeg = findnn(histogram, vBoWNeg)[1]
 
     if (DistPos < DistNeg):
         sLabel = 1
@@ -208,8 +226,8 @@ if __name__ == '__main__':
     nameDirNeg_test = 'data/data_bow/cars-testing-neg'
 
 
-    k = None  # todo
-    numiter = None  # todo
+    k = 2  # todo
+    numiter = 10  # todo
 
     print('creating codebook ...')
     vCenters = create_codebook(nameDirPos_train, nameDirNeg_train, k, numiter)
