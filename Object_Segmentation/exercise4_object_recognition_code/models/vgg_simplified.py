@@ -34,33 +34,32 @@ class Vgg(nn.Module):
         self.conv_block1 = nn.Sequential(
             nn.Conv2d(3, 64, kernel_size=3, padding=1), 
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.conv_block2 = nn.Sequential(
             nn.Conv2d(64, 128, kernel_size=3, padding=1), 
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.conv_block3 = nn.Sequential(
             nn.Conv2d(128, 256, kernel_size=3, padding=1), 
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.conv_block4 = nn.Sequential(
             nn.Conv2d(256, 512, kernel_size=3, padding=1), 
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.conv_block5 = nn.Sequential(
             nn.Conv2d(512, 512, kernel_size=3, padding=1),
             nn.ReLU(),
-            nn.MaxPool2d(kernel_size=2)
+            nn.MaxPool2d(kernel_size=2, stride=2)
         )
         self.classifier = nn.Sequential(
-            nn.Flatten(),
-            nn.Linear(512, self.fc_layer,bias=True),
+            nn.Linear(512, self.fc_layer),
             nn.ReLU(),
-            nn.Dropout2d(),
+            nn.Dropout(),
             nn.Linear(self.fc_layer, self.classes)
         )
 
@@ -83,7 +82,7 @@ class Vgg(nn.Module):
         y = self.conv_block3(y)
         y = self.conv_block4(y)
         y = self.conv_block5(y)
-       
+        y = y.view(y.size(0), -1)
         score = self.classifier(y)
 
         return score
